@@ -8,6 +8,7 @@ resources:
   - frontend-deployment.yaml
   - frontend-service.yaml
   - ingress.yaml
+  - api-servicemonitor.yaml
 # CI updates these tags on every build (Step 4); Argo CD syncs the change (Step 5)
 images:
   - name: adi0635/gitops-api
