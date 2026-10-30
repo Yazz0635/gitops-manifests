@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: demo
+resources:
+  - namespace.yaml
+  - api-deployment.yaml
+  - api-service.yaml
+  - frontend-deployment.yaml
+  - frontend-service.yaml
+  - ingress.yaml
+# CI updates these tags on every build (Step 4); Argo CD syncs the change (Step 5)
+images:
+  - name: adi0635/gitops-api
+    newTag: v1
+  - name: adi0635/gitops-frontend
+    newTag: v1
