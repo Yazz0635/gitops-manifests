@@ -13,6 +13,6 @@ resources:
 # CI updates these tags on every build (Step 4); Argo CD syncs the change (Step 5)
 images:
   - name: adi0635/gitops-api
-    newTag: 2005a9cb0fd623debfcc3db03b218ed0c3fae7d5
+    newTag: 65e60430070ba574352e94dbad99f0ca1cb70be3
   - name: adi0635/gitops-frontend
-    newTag: 2005a9cb0fd623debfcc3db03b218ed0c3fae7d5
+    newTag: 65e60430070ba574352e94dbad99f0ca1cb70be3
