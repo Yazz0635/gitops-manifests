@@ -10,8 +10,6 @@ resources:
   - ingress.yaml
   - api-servicemonitor.yaml
   - api-hpa.yaml
-  - api-hpa.yaml
-  - api-hpa.yaml
 # CI updates these tags on every build (Step 4); Argo CD syncs the change (Step 5)
 images:
   - name: adi0635/gitops-api
